@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
+import React from "react"
 export default function App() {
-    return (
-        <div>
-            13
-        </div>)
+    return (<div>
+        13
+    </div>)
 }

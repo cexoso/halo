@@ -1,7 +1,7 @@
 const path = require("path")
 const HtmlPlugin = require("html-webpack-plugin")
 module.exports = {
-  entry: './app/index.ts',
+  entry: './app/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: "[name].bundle.js"
@@ -21,5 +21,6 @@ module.exports = {
   ],
   devServer: {
     contentBase: path.join(__dirname, "dist")
-  }
+  },
+  devtool: "cheap-module-eval-source-map"
 };
