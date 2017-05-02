@@ -1,13 +1,14 @@
 import * as React from "react";
-import {Component} from "react";
+import { Component } from "react";
+import List from "./../components/list"
 function log(target, key: string, value: any) {
     console.log(value)
-    return function() {
+    return function () {
         console.log(22)
         return 2
     }
 }
-export default class App extends Component {
+export default class App extends Component<any, any> {
     initTime = new Date()
     @log
     click() {
@@ -16,8 +17,8 @@ export default class App extends Component {
     }
     render() {
         return (<div onClick={this.click}>
-        13
-    </div>)
+            <List onWheel={()=>{}}/>
+        </div>)
     }
 }
 
