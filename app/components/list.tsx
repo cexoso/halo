@@ -1,4 +1,4 @@
-import * as React from "react";
+/*import * as React from "react";
 import { WheelEventHandler } from "react"
 // import {} from "rxjs";
 import { Component } from "react";
@@ -15,7 +15,7 @@ function getDefaultProps(): propsTypes {
         }
     }
 }
-@withScrollControl
+// @withScrollControl
 @defaultProps(getDefaultProps())
 export default class List extends Component<propsTypes, any> {
     render() {
@@ -24,4 +24,4 @@ export default class List extends Component<propsTypes, any> {
             {times(100, (i) => <div key={i}>div {i}</div>)}
         </div>
     }
-}
+}*/
